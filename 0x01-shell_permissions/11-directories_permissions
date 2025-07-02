@@ -1,6 +1,2 @@
 #!/bin/bash
-
-find . -type d | while read dir
-do
-  chmod a+x "$dir"
-done
+find . -type d | xargs chmod a+x
