@@ -1,2 +1,2 @@
 #!/bin/bash
-for f in iacta_{0..2}; do [ -f "$f" ] && head -n 3 "$f" | tail -n 1; done
+find . -name 'iacta_[0-2]' -exec sh -c 'head -n 3 "$1" | tail -n 1' _ {} \;
