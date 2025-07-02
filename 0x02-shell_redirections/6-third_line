@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n 3 iacta* | tail -n 1
+for f in iacta_{0..2}; do [ -f "$f" ] && head -n 3 "$f" | tail -n 1; done
