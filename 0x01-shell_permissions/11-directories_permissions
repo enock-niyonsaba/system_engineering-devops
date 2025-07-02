@@ -1,2 +1,6 @@
 #!/bin/bash
-chmod a+x find . -type d
+
+find . -type d | while read dir
+do
+  chmod a+x "$dir"
+done
