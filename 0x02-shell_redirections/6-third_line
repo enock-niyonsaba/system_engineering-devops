@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name 'iacta_[0-2]' -exec sh -c 'head -n 3 "$1" | tail -n 1' _ {} \
+head -n 3 iacta_*
