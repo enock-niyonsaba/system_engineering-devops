@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Lists users running bash processes
 
-ps -ef --forest
+ps -A -o uid,pid,ppid,cmd --forest
