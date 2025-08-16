@@ -1,0 +1,12 @@
+#!/bin/bash
+# List all local variables
+echo "Local variables:"
+set
+
+# List all environment variables
+echo -e "\nEnvironment variables:"
+printenv
+
+# List all shell functions
+echo -e "\nShell functions:"
+declare -f
