@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Lists users running bash processes
+
+echo "USER"
+pgrep -a bash | awk '{print $2}' | xargs -n1 ps -o user= -p | sort | uniq
