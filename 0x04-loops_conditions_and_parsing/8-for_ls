@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script lists non-hidden files and shows the part after the first dash, or full name if no dash
+for file in *; do
+  [ -f "$file" ] || continue  # Skip directories or special entries
+  case "$file" in
+    *-*) echo "${file#*-}" ;;
+    *) echo "$file" ;;
+  esac
+done
